@@ -28,7 +28,7 @@ spring:
         show-sql: true
 
 authserver:
-  hostname: http://localhost:3306
+  hostname: http://localhost:9092
 security:
   oauth2:
     resource:
