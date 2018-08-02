@@ -12,26 +12,12 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 3000
-    
-    /*zuul:
-  routes:
-    greetings:
-      path: /providers/**
-      serviceId:delivery-provider-service
-      stripPrefix: false*/
-      
-      zuul:
-  #Service will be mapped under the /api URI
-  prefix: /api
-#  Uncomment to disable auto-registering all services read from Eureka
-#  ignoredServices: '*'
-  routes:
-    test:
-      path: /redirect/**
-      url: http://google.com
-    customer-by-address:
-      path: /customer-by-address/**
-      url: http://localhost:9098
-    customer-by-service:
-      path: /customer-by-service/**
-      serviceId: CUSTOMER-SERVICE
+
+zuul:
+    prefix: /api
+    ignoredServices: '*'
+ routes:
+	providers:
+		 path:/providers/**
+		 serviceId: deliveryy-provider-service
+                 stripPrefix: false*/
