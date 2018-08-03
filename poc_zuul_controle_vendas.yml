@@ -18,6 +18,5 @@ zuul:
     ignoredServices: '*'
  routes:
     provider:
-        path:/providers/**
+        path:/provider/**
         serviceId: provider
-        stripPrefix: false*/
