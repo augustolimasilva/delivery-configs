@@ -20,3 +20,4 @@ zuul:
     provider:
         path:/provider/**
         serviceId: provider
+        stripPrefix: false
