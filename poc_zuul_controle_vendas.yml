@@ -17,7 +17,7 @@ zuul:
     prefix: /api
     ignoredServices: '*'
  routes:
-    providers:
+    provider:
         path:/providers/**
-        serviceId: DELIVERY-PROVIDER-SERVICE
+        serviceId: provider
         stripPrefix: false*/
