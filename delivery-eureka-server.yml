@@ -1,15 +1,15 @@
 server:
   port: 9091
 
-#eureka:
-  #instance:
-   # hostname: localhost
-  #client:
-    #registerWithEureka: true
-    #fetchRegistry: false
-    #healthcheck:
-     # enabled: true
-    #serviceUrl:
-   #   defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-  #server:
-    #wait-time-in-ms-when-sync-empty: 3000
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    wait-time-in-ms-when-sync-empty: 3000
