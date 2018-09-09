@@ -1,6 +1,12 @@
 server:
   port: 9094
 
+ribbon:
+    ReadTimeout: 60000
+    ConnectTimeout: 6000
+    eureka:
+        enabled:true
+  
 eureka:
   instance:
     hostname: localhost
@@ -15,9 +21,6 @@ eureka:
   server:
     wait-time-in-ms-when-sync-empty: 3000
 
-ribbon:
-    eureka:
-        enabled:true
 
 endpoints:
   restart:
