@@ -29,6 +29,6 @@ endpoints:
         
 zuul: 
   routes:
-   public-restservice: 
-    path: /public/**
-    serviceId: public-restservice
+   provider-restservice: 
+    path: /fornecedor/**
+    serviceId: provider
