@@ -8,16 +8,9 @@ eureka:
   client:
     registerWithEureka: true
     fetchRegistry: false
+    healthcheck:
+     enabled: true
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 3000
-    
-#zuul:
- #   prefix: /api
- #   ignoredServices: '*'
- #routes:
- #   provider:
- #       path: /provider/**
- #       serviceId: provider
- #       stripPrefix: false
