@@ -27,8 +27,8 @@ endpoints:
   health:
     sensitive: false
         
-#zuul:
- #   routes:
-  #      provider:
-   #         path:/provider/**
-    #            serviceId: provider
+zuul: 
+  routes:
+   public-restservice: 
+    path: /public/**
+    serviceId: public-restservice
