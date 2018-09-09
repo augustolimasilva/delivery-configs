@@ -27,7 +27,7 @@ spring:
         generate-ddl: false
         hibernate:
             ddl-auto: update
-        show-sql: true
+        show-sql: false
 
 authserver:
   hostname: http://localhost:9092

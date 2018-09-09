@@ -1,5 +1,5 @@
-#server:
- # port: 8086
+server:
+  port: 90955
 
 eureka:
   instance:
@@ -13,11 +13,11 @@ eureka:
   server:
     wait-time-in-ms-when-sync-empty: 3000
     
-zuul:
-    prefix: /api
-    ignoredServices: '*'
- routes:
-    provider:
-        path: /provider/**
-        serviceId: provider
-        stripPrefix: false
+#zuul:
+ #   prefix: /api
+ #   ignoredServices: '*'
+ #routes:
+ #   provider:
+ #       path: /provider/**
+ #       serviceId: provider
+ #       stripPrefix: false
