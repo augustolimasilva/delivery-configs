@@ -34,4 +34,4 @@ zuul:
   routes:
    provider-restservice: 
     path: /providers/**
-    serviceId: PROVIDER
+    serviceId: provider
