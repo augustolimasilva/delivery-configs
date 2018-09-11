@@ -33,7 +33,7 @@ zuul:
    provider-restservice: 
     path: /providers/**
     serviceId: provider
-    sensitiveHeaders: Cookie,Set-Cookie,Authorization
+    sensitiveHeaders: Cookie,Set-Cookie
 
 authserver:
   hostname: http://localhost:9092
