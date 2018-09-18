@@ -7,7 +7,7 @@ eureka:
     port: 9091
   client:
     registerWithEureka: true
-    fetchRegistry: true
+    fetchRegistry: false
     healthcheck:
      enabled: true
     serviceUrl:
